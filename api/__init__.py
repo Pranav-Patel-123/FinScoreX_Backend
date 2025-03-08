@@ -1,1 +1,1 @@
-from .existing import router as scoring_router
+from .main import router as scoring_router
