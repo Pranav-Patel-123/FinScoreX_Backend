@@ -5,7 +5,7 @@ from models.database import collection
 router = APIRouter()
 
 
-@router.get("/cibil-scores")
+@router.get("/")
 async def get_cibil_scores():
     try:
         # Fetch all data from MongoDB

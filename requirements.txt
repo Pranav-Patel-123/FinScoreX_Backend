@@ -1,7 +1,7 @@
-fastapi
-pydantic
-motor
-python-dotenv
-numpy
+fastapi 
+uvicorn 
+motor 
+numpy 
+scikit-learn 
 joblib
-bson
+python-dotenv

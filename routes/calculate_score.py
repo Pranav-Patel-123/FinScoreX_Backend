@@ -41,7 +41,7 @@ def calculate_score(data: BusinessData) -> float:
     except Exception as e:
         raise ValueError(f"Error in score calculation: {e}")
 
-@router.post("/calculate_score/")
+@router.post("/")
 async def calculate_business_score(data: BusinessData):
     try:
         # Calculate AI Credit Score using ML model

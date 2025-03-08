@@ -1,6 +1,9 @@
+from fastapi import APIRouter
 import joblib
 import numpy as np
 from models.model import BusinessData
+
+router = APIRouter()
 
 # Load trained model
 model = joblib.load("ml/cibil_score_model.pkl")
