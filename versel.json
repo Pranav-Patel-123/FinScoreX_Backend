@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
       {
-          "src": "api/main.py",
+          "src": "main.py",
           "env": {
                     "PYTHON_VERSION": "3.10"
                   }
@@ -12,7 +12,7 @@
   "routes": [
       {
           "src": "/(.*)",
-          "dest": "api/main.py"
+          "dest": "main.py"
       }
   ]
 }
