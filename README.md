@@ -26,7 +26,18 @@ This is the backend service for **FinScoreX**, a financial scoring system that e
 
 ## 📂 Project Structure
 
-FinScoreX_Backend/ │── models/ │ ├── model.py # Pydantic data model for business records │── routes/ │ ├── calculate_score.py # API for calculating AI credit scores │ ├── cibil_scores.py # API for fetching CIBIL scores from MongoDB │── ml/ │ ├── cibil_score_model.pkl # Pre-trained ML model │── database.py # MongoDB connection setup │── main.py # FastAPI entry point │── requirements.txt # Dependencies
+FinScoreX_Backend/
+│── models/
+│   ├── model.py            # Pydantic data model for business records
+│── routes/
+│   ├── calculate_score.py   # API for calculating AI credit scores
+│   ├── cibil_scores.py      # API for fetching CIBIL scores from MongoDB
+│── ml/
+│   ├── cibil_score_model.pkl  # Pre-trained ML model
+│── database.py              # MongoDB connection setup
+│── main.py                  # FastAPI entry point
+│── requirements.txt          # Dependencies
+
 
 
 ---
