@@ -26,6 +26,7 @@ This is the backend service for **FinScoreX**, a financial scoring system that e
 
 ## 📂 Project Structure
 
+```
 FinScoreX_Backend/
 │── models/
 │   ├── model.py            # Pydantic data model for business records
@@ -37,7 +38,7 @@ FinScoreX_Backend/
 │── database.py              # MongoDB connection setup
 │── main.py                  # FastAPI entry point
 │── requirements.txt          # Dependencies
-
+```
 
 
 ---
