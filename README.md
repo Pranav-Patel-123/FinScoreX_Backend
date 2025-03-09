@@ -29,15 +29,15 @@ This is the backend service for **FinScoreX**, a financial scoring system that e
 ```
 FinScoreX_Backend/
 │── models/
-│   ├── model.py            # Pydantic data model for business records
+│   ├── model.py               # Pydantic data model for business records
 │── routes/
-│   ├── calculate_score.py   # API for calculating AI credit scores
-│   ├── cibil_scores.py      # API for fetching CIBIL scores from MongoDB
+│   ├── calculate_score.py     # API for calculating AI credit scores
+│   ├── cibil_scores.py        # API for fetching CIBIL scores from MongoDB
 │── ml/
 │   ├── cibil_score_model.pkl  # Pre-trained ML model
-│── database.py              # MongoDB connection setup
-│── main.py                  # FastAPI entry point
-│── requirements.txt          # Dependencies
+│── database.py                # MongoDB connection setup
+│── main.py                    # FastAPI entry point
+│── requirements.txt           # Dependencies
 ```
 
 
@@ -78,12 +78,12 @@ uvicorn main:app --reload
 ### **Credit Score Calculation**
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| `POST` | `/calculate_score/` | Calculate AI credit score & store data in MongoDB |
+| `POST` | `/calculate/` | Calculate AI credit score & store data in MongoDB |
 
 ### **Retrieve CIBIL Scores**
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| `GET`  | `/cibil_scores/` | Retrieve stored credit scores from MongoDB |
+| `GET`  | `/cibil/` | Retrieve stored credit scores from MongoDB |
 
 ---
 
